@@ -1,13 +1,11 @@
 {
-	"name": "my-better-t-app",
+	"name": "help_desk",
 	"private": true,
 	"workspaces": ["apps/*", "packages/*"],
 	"scripts": {
 		"check": "biome check --write .",
 		"dev": "turbo dev",
 		"build": "turbo build",
-		"check-types": "turbo check-types",
-		"dev:native": "turbo -F native dev",
 		"dev:web": "turbo -F web dev",
 		"dev:server": "turbo -F server dev",
 		"db:push": "turbo -F server db:push",

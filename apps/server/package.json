@@ -3,11 +3,8 @@
 	"main": "src/index.ts",
 	"type": "module",
 	"scripts": {
-		"build": "tsc && tsc-alias",
-		"check-types": "tsc --noEmit",
-		"compile": "bun build --compile --minify --sourcemap --bytecode ./src/index.ts --outfile server",
 		"dev": "bun run --hot src/index.ts",
-		"start": "bun run dist/src/index.js",
+		"build": "bun build --compile --minify-whitespace --minify-syntax --target bun --outfile server ./src/index.ts",
 		"db:local": "turso dev --db-file local.db",
 		"db:push": "drizzle-kit push",
 		"db:studio": "drizzle-kit studio",
@@ -15,8 +12,6 @@
 		"db:migrate": "drizzle-kit migrate"
 	},
 	"dependencies": {
-		"dotenv": "^16.4.7",
-		"zod": "^3.25.16",
 		"elysia": "^1.2.25",
 		"@elysiajs/cors": "^1.2.0",
 		"drizzle-orm": "^0.38.4",
@@ -24,7 +19,6 @@
 		"better-auth": "^1.2.8"
 	},
 	"devDependencies": {
-		"tsc-alias": "^1.8.11",
 		"typescript": "^5.8.2",
 		"@types/bun": "^1.2.6",
 		"drizzle-kit": "^0.30.5"
