@@ -1,4 +1,4 @@
-import { sqliteTable, integer, text, unique } from "drizzle-orm/sqlite-core";
+import { integer, sqliteTable, text, unique } from "drizzle-orm/sqlite-core";
 import { user } from "./auth";
 import { timestamps } from "./helpers";
 

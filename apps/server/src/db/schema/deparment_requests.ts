@@ -1,4 +1,4 @@
-import { sqliteTable, integer, unique } from "drizzle-orm/sqlite-core";
+import { integer, sqliteTable, unique } from "drizzle-orm/sqlite-core";
 import { timestamps } from "./helpers";
 
 export const departmentAllowedRequests = sqliteTable(

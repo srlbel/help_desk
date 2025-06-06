@@ -1,12 +1,12 @@
 import {
-	sqliteTable,
 	integer,
+	sqliteTable,
 	text,
 	unique,
 	uniqueIndex,
 } from "drizzle-orm/sqlite-core";
-import { tickets } from "./tickets";
 import { user } from "./auth";
+import { tickets } from "./tickets";
 
 export const ticketAssignments = sqliteTable(
 	"ticket_assignments",
