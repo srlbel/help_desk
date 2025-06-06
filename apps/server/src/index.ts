@@ -2,7 +2,7 @@ import "dotenv/config";
 import { cors } from "@elysiajs/cors";
 import { swagger } from "@elysiajs/swagger";
 import { Elysia } from "elysia";
-import { auth, OpenAPI } from "./lib/auth";
+import { OpenAPI, auth } from "./lib/auth";
 
 const app = new Elysia()
 	.use(
